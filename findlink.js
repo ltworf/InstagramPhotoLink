@@ -1,22 +1,16 @@
-function getimglink(i) {
-    d=document.getElementById("pImage_"+i);
-    
-    if (d==null) return false;
+function getimglink() {
+    d = document.getElementsByClassName('_2di5p');
+    if (d.length == 0) return false;
+
+    d = d[0];
 
     var link = document.createElement("a");
-    link.href=d.src;
+    link.href = d.src;
     link.innerHTML='<p>Link&nbsp;</p>';
 
-    divo=d.parentNode.parentNode.parentNode.parentNode;
-    divo.appendChild(link);
-    
+    d.parentNode.parentNode.parentNode.appendChild(link);
+
     return true;
 }
 
-function linkthemall() {
-    i = 0;
-    
-    while(getimglink(i)) i++;   
-}
-
-linkthemall();
+getimglink();
