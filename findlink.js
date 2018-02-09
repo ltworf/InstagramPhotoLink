@@ -8,7 +8,7 @@ function getimglink() {
     link.href = d.src;
     link.innerHTML='<p>Link&nbsp;</p>';
 
-    d.parentNode.parentNode.parentNode.appendChild(link);
+    d.parentNode.parentNode.parentNode.parentNode.appendChild(link);
 
     return true;
 }
