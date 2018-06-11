@@ -1,5 +1,5 @@
 function getimglink() {
-    d = document.getElementsByClassName('_2di5p');
+    d = document.getElementsByClassName('FFVAD');
     if (d.length == 0) return false;
 
     d = d[0];
@@ -8,7 +8,7 @@ function getimglink() {
     link.href = d.src;
     link.innerHTML='<p>Link&nbsp;</p>';
 
-    d.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(link);
+    d.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(link);
 
     return true;
 }
